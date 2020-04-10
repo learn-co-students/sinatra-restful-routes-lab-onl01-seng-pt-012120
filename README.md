@@ -1,5 +1,4 @@
 # Restful Routes Basic Lab
-
 ## Objectives
 
 - Build RESTful routes to create, show, edit, and delete items from the
