@@ -6,4 +6,23 @@ class ApplicationController < Sinatra::Base
 
   # code actions here!
 
+  get '/' do
+  	redirect '/recipes'
+  end
+
+  get '/recipes' do
+
+  	erb :index
+  end
+
+  get '/recipes/new' do
+  	erb :new
+  end
+
+  post '/recipes' do
+  	binding.pry
+
+  	redirect "/recipes#{recipe.id}"
+  end
+
 end
