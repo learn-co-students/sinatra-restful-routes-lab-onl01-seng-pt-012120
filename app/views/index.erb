@@ -1,0 +1,8 @@
+<h1>Here are all of the Recipes submitted by our users:</h1>
+<%@recipes.each do |recipe|%>
+<h2><%=recipe.name%></h2>
+<h3>Ingredients</h3>
+<p><%=recipe.ingredients%></p><br>
+<p>Cook Time: <%=recipe.cook_time%></p>
+<a href='/recipes/<%=recipe.id%>'>Visit this Recipes page</a>
+<%end%>
